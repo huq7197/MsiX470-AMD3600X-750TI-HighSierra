@@ -20,7 +20,7 @@ macOS引导版镜像免费下载地址：[/ISO/MacOS/10.13/ (dtops.cc)](https://
 
 ​	下载的macOS镜像自带Clover引导，测试过程中体验不佳、安装失败。后更换为目前更为主流的OC引导方式，OpenCore版本0.66，tools文件中[OpenCore.Configurator.2.29.0.0__HeiPG.cn.dmg](https://github.com/huq7197/MsiX470-AMD3600X-750TI-HighSierra/blob/main/tools/OpenCore.Configurator.2.29.0.0__HeiPG.cn.dmg) 为OpenCore 0.66对应的OpenCore Configurator工具，解压密码为：**heipg.cn**
 
-​	引导启动的GUI界面等待时间设置为10s，且已隐藏了辅助条目，可自行开启或调整。![image-20211009233729369](/Users/huq/Library/Application Support/typora-user-images/image-20211009233729369.png)
+​	引导启动的GUI界面等待时间设置为10s，且已隐藏了辅助条目，可自行开启或调整。
 
 
 
@@ -32,6 +32,6 @@ macOS引导版镜像免费下载地址：[/ISO/MacOS/10.13/ (dtops.cc)](https://
 
 ​	测试过程中在不添加任何驱动和补丁的情况下，Wi-Fi和Bluetooth均可正常使用，但隔空投送功能不能用，在Kext 中添加  IO80211HighSierra.kext和AirportBrcmFixup.kext后，并在OpenCore Configurator中启用，上传的efi文件为未启用状态。
 
-![Snipaste_2021-10-09_23-26-23](/Users/huq/Desktop/Snipaste_2021-10-09_23-26-23.png)
+
 
 ​	添加补丁之后隔空投送功能可正常使用，经测试iPhone、iPad与该Mac均可双向正常隔空投送。
